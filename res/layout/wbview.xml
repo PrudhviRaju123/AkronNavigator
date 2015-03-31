@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="20dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:clickable="true"
+        android:contentDescription="@string/speak"
+        android:paddingTop="20dp"
+        android:src="@drawable/voice_search1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/wlk_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="walking" />
+
+        <RadioButton
+            android:id="@+id/roobus_mde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roo Bus" />
+    </RadioGroup>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup1" />
+
+</RelativeLayout>
